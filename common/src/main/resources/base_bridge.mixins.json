@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "package": "cc.thonly.base_bridge.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "client": [
+  ],
+  "mixins": [
+    "AxeItemMixin",
+    "HolderReferenceAccessors",
+    "LootTableMappedRegistryMixin",
+    "MinecraftServerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "base_bridge",
+  "version": "${version}",
+  "name": "Base Bridge",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "稀神灵梦"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "GLPv3",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "cc.thonly.base_bridge.fabric.Test"
+    ],
+    "preLaunch": [
+      "cc.thonly.base_bridge.fabric.impl.BaseBridgeFabric"
+    ]
+  },
+  "mixins": [
+    "base_bridge.mixins.json",
+    "base_bridge.fabric.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": ">=1.21.6",
+    "java": ">=21",
+    "architectury": ">=17.0.8",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  },
+  "accessWidener": "base_bridge.accesswidener"
+}

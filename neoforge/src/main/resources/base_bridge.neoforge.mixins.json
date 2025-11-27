@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "cc.thonly.base_bridge.neoforge.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "client": [
+  ],
+  "mixins": [
+    "FireBlockMixin",
+    "RegistryDataLoaderMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,254 @@
+---- Minecraft Crash Report ----
+// I bet Cylons wouldn't have this problem.
+
+Time: 2025-11-28 03:27:26
+Description: Initializing game
+
+java.lang.RuntimeException: Could not execute entrypoint stage 'main' due to errors, provided by 'base_bridge' at 'cc.thonly.base_bridge.fabric.Test'!
+	at net.fabricmc.loader.impl.FabricLoaderImpl.lambda$invokeEntrypoints$0(FabricLoaderImpl.java:409)
+	at net.fabricmc.loader.impl.util.ExceptionUtil.gatherExceptions(ExceptionUtil.java:33)
+	at net.fabricmc.loader.impl.FabricLoaderImpl.invokeEntrypoints(FabricLoaderImpl.java:407)
+	at net.fabricmc.loader.impl.game.minecraft.Hooks.startClient(Hooks.java:52)
+	at knot//net.minecraft.client.Minecraft.<init>(Minecraft.java:481)
+	at knot//net.minecraft.client.main.Main.main(Main.java:249)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:514)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:72)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
+	at dev.architectury.transformer.TransformerRuntime.main(TransformerRuntime.java:220)
+Caused by: java.lang.reflect.UndeclaredThrowableException
+	at knot//cc.thonly.base_bridge.fabric.$Proxy37.run(Unknown Source)
+	at knot//cc.thonly.base_bridge.fabric.Test.onInitialize(Test.java:30)
+	at net.fabricmc.loader.impl.FabricLoaderImpl.invokeEntrypoints(FabricLoaderImpl.java:405)
+	... 8 more
+Caused by: java.lang.IllegalAccessException: class cc.thonly.base_bridge.event.BaseBridgeEvent$1 cannot access a member of interface cc.thonly.base_bridge.fabric.Test$1TestInf1 with modifiers "public abstract"
+	at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:394)
+	at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:714)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:571)
+	at knot//cc.thonly.base_bridge.event.BaseBridgeEvent$1.lambda$invoker$0(BaseBridgeEvent.java:57)
+	... 11 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at net.fabricmc.loader.impl.FabricLoaderImpl.lambda$invokeEntrypoints$0(FabricLoaderImpl.java:409)
+	at net.fabricmc.loader.impl.util.ExceptionUtil.gatherExceptions(ExceptionUtil.java:33)
+	at net.fabricmc.loader.impl.FabricLoaderImpl.invokeEntrypoints(FabricLoaderImpl.java:407)
+	at net.fabricmc.loader.impl.game.minecraft.Hooks.startClient(Hooks.java:52)
+	at knot//net.minecraft.client.Minecraft.<init>(Minecraft.java:481)
+
+-- Initialization --
+Details:
+	Modules: 
+		ADVAPI32.dll:高级 Windows 32 基本 API:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		COMCTL32.dll:用户体验控件库:6.10 (WinBuild.160101.0800):Microsoft Corporation
+		CRYPT32.dll:加密 API32:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		CRYPTBASE.dll:Base cryptographic API DLL:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		CRYPTSP.dll:Cryptographic Service Provider API:10.0.22621.2506 (WinBuild.160101.0800):Microsoft Corporation
+		DBGHELP.DLL:Windows Image Helper:10.0.22621.2506 (WinBuild.160101.0800):Microsoft Corporation
+		DNSAPI.dll:DNS 客户端 API DLL:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		GDI32.dll:GDI Client DLL:10.0.22621.3085 (WinBuild.160101.0800):Microsoft Corporation
+		IMM32.DLL:Multi-User Windows IMM32 API Client DLL:10.0.22621.3374 (WinBuild.160101.0800):Microsoft Corporation
+		IPHLPAPI.DLL:IP 帮助程序 API:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		KERNEL32.DLL:Windows NT 基本 API 客户端 DLL:10.0.22621.3374 (WinBuild.160101.0800):Microsoft Corporation
+		KERNELBASE.dll:Windows NT 基本 API 客户端 DLL:10.0.22621.3374 (WinBuild.160101.0800):Microsoft Corporation
+		MpOav.dll:IOfficeAntiVirus Module:4.18.2201.11 (WinBuild.160101.0800):Microsoft Corporation
+		NSI.dll:NSI User-mode interface DLL:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		NTASN1.dll:Microsoft ASN.1 API:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		OLEAUT32.dll:OLEAUT32.DLL:10.0.22621.2506 (WinBuild.160101.0800):Microsoft Corporation
+		Ole32.dll:用于 Windows 的 Microsoft OLE:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		POWRPROF.dll:电源配置文件帮助程序 DLL:10.0.22621.3374 (WinBuild.160101.0800):Microsoft Corporation
+		PSAPI.DLL:Process Status Helper:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		Pdh.dll:Windows 性能数据助手 DLL:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		RPCRT4.dll:远程过程调用运行时:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		SHCORE.dll:SHCORE:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		SHELL32.dll:Windows Shell 公用 DLL:10.0.22621.2792 (WinBuild.160101.0800):Microsoft Corporation
+		UMPDC.dll:User Mode Power Dependency Coordinator:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		USER32.dll:多用户 Windows 用户 API 客户端 DLL:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		USERENV.dll:Userenv:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		VCRUNTIME140.dll:Microsoft® C Runtime Library:14.36.32532.0:Microsoft Corporation
+		VERSION.dll:Version Checking and File Installation Libraries:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		WINHTTP.dll:Windows HTTP 服务:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		WINMM.dll:MCI API DLL:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		WS2_32.dll:Windows Socket 2.0 32 位 DLL:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		amsi.dll:Anti-Malware Scan Interface:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		apphelp.dll:应用程序兼容性客户端库:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		awt.dll:Java(TM) Platform SE binary:21.0.3.0:Oracle Corporation
+		bcrypt.dll:Windows 加密基元库:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		bcryptPrimitives.dll:Windows Cryptographic Primitives Library:10.0.22621.3374 (WinBuild.160101.0800):Microsoft Corporation
+		clbcatq.dll:COM+ Configuration Catalog:2001.12.10941.16384 (WinBuild.160101.0800):Microsoft Corporation
+		combase.dll:用于 Windows 的 Microsoft COM:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		dbgcore.DLL:Windows Core Debugging Helpers:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		extnet.dll:Java(TM) Platform SE binary:21.0.3.0:Oracle Corporation
+		fwpuclnt.dll:FWP/IPsec 用户模式 API:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		gdi32full.dll:GDI Client DLL:10.0.22621.3374 (WinBuild.160101.0800):Microsoft Corporation
+		instrument.dll:Java(TM) Platform SE binary:21.0.3.0:Oracle Corporation
+		java.dll:Java(TM) Platform SE binary:21.0.3.0:Oracle Corporation
+		java.exe:Java(TM) Platform SE binary:21.0.3.0:Oracle Corporation
+		jimage.dll:Java(TM) Platform SE binary:21.0.3.0:Oracle Corporation
+		jli.dll:Java(TM) Platform SE binary:21.0.3.0:Oracle Corporation
+		jna13818698107940965542.dll:JNA native library:7.0.2:Java(TM) Native Access (JNA)
+		jsvml.dll:Java(TM) Platform SE binary:21.0.3.0:Oracle Corporation
+		jvm.dll:Java HotSpot(TM) 64-Bit server VM:21.0.3.0:Oracle Corporation
+		kernel.appcore.dll:AppModel API Host:10.0.22621.2715 (WinBuild.160101.0800):Microsoft Corporation
+		management.dll:Java(TM) Platform SE binary:21.0.3.0:Oracle Corporation
+		management_ext.dll:Java(TM) Platform SE binary:21.0.3.0:Oracle Corporation
+		msvcp140.dll:Microsoft® C Runtime Library:14.36.32532.0:Microsoft Corporation
+		msvcp_win.dll:Microsoft® C Runtime Library:10.0.22621.3374 (WinBuild.160101.0800):Microsoft Corporation
+		msvcrt.dll:Windows NT CRT DLL:7.0.22621.2506 (WinBuild.160101.0800):Microsoft Corporation
+		mswsock.dll:Microsoft Windows Sockets 2.0 服务提供程序:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		napinsp.dll:电子邮件命名填充提供程序:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		ncrypt.dll:Windows NCrypt 路由器:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		net.dll:Java(TM) Platform SE binary:21.0.3.0:Oracle Corporation
+		nio.dll:Java(TM) Platform SE binary:21.0.3.0:Oracle Corporation
+		nlansp_c.dll:NLA Namespace Service Provider DLL:10.0.22621.2506 (WinBuild.160101.0800):Microsoft Corporation
+		ntdll.dll:NT 层 DLL:10.0.22621.3374 (WinBuild.160101.0800):Microsoft Corporation
+		perfos.dll:Windows 系统性能对象 DLL:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		pfclient.dll:SysMain Client:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		pnrpnsp.dll:PNRP 命名空间提供程序:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		profapi.dll:User Profile Basic API:10.0.22621.3374 (WinBuild.160101.0800):Microsoft Corporation
+		rasadhlp.dll:Remote Access AutoDial Helper:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		rsaenh.dll:Microsoft Enhanced Cryptographic Provider:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		sechost.dll:Host for SCM/SDDL/LSA Lookup APIs:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		shlwapi.dll:外壳简易实用工具库:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		sunmscapi.dll:Java(TM) Platform SE binary:21.0.3.0:Oracle Corporation
+		ucrtbase.dll:Microsoft® C Runtime Library:10.0.22621.3374 (WinBuild.160101.0800):Microsoft Corporation
+		vcruntime140_1.dll:Microsoft® C Runtime Library:14.36.32532.0:Microsoft Corporation
+		verify.dll:Java(TM) Platform SE binary:21.0.3.0:Oracle Corporation
+		win32u.dll:Win32u:10.0.22621.3447 (WinBuild.160101.0800):Microsoft Corporation
+		windows.storage.dll:Microsoft WinRT Storage API:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		winrnr.dll:LDAP RnR Provider DLL:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		wintypes.dll:Windows 基本类型 DLL:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		wshbth.dll:Windows Sockets Helper DLL:10.0.22621.3374 (WinBuild.160101.0800):Microsoft Corporation
+		zip.dll:Java(TM) Platform SE binary:21.0.3.0:Oracle Corporation
+Stacktrace:
+	at knot//net.minecraft.client.main.Main.main(Main.java:249)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:514)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:72)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
+	at dev.architectury.transformer.TransformerRuntime.main(TransformerRuntime.java:220)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.7
+	Minecraft Version ID: 1.21.7
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 21.0.3, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode, sharing), Oracle Corporation
+	Memory: 305779688 bytes (291 MiB) / 1145044992 bytes (1092 MiB) up to 8527020032 bytes (8132 MiB)
+	CPUs: 12
+	Processor Vendor: GenuineIntel
+	Processor Name: 12th Gen Intel(R) Core(TM) i5-12450H
+	Identifier: Intel64 Family 6 Model 154 Stepping 3
+	Microarchitecture: Alder Lake
+	Frequency (GHz): 2.50
+	Number of physical packages: 1
+	Number of physical CPUs: 8
+	Number of logical CPUs: 12
+	Graphics card #0 name: NVIDIA GeForce RTX 3060 Laptop GPU
+	Graphics card #0 vendor: NVIDIA
+	Graphics card #0 VRAM (MiB): 6144.00
+	Graphics card #0 deviceId: VideoController1
+	Graphics card #0 versionInfo: 31.0.15.4633
+	Graphics card #1 name: Intel(R) UHD Graphics
+	Graphics card #1 vendor: Intel Corporation
+	Graphics card #1 VRAM (MiB): 1024.00
+	Graphics card #1 deviceId: VideoController2
+	Graphics card #1 versionInfo: 31.0.101.4502
+	Memory slot #0 capacity (MiB): 16384.00
+	Memory slot #0 clockSpeed (GHz): 3.20
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MiB): 16384.00
+	Memory slot #1 clockSpeed (GHz): 3.20
+	Memory slot #1 type: DDR4
+	Virtual memory max (MiB): 58895.36
+	Virtual memory used (MiB): 37421.52
+	Swap memory total (MiB): 26383.00
+	Swap memory used (MiB): 1014.87
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 1315.10, total: 102407.00
+	Space in storage for workdir (MiB): available: 25877.92, total: 384962.00
+	JVM Flags: 0 total; 
+	Fabric Mods: 
+		architectury: Architectury 17.0.8
+		base_bridge: Base Bridge 0.1.0
+		fabric-api: Fabric API 0.129.0+1.21.7
+		fabric-api-base: Fabric API Base 0.4.64+9ec45cd86c
+		fabric-api-lookup-api-v1: Fabric API Lookup API (v1) 1.6.100+946bf4c36c
+		fabric-biome-api-v1: Fabric Biome API (v1) 16.0.11+946bf4c36c
+		fabric-block-api-v1: Fabric Block API (v1) 1.1.3+946bf4c36c
+		fabric-block-view-api-v2: Fabric BlockView API (v2) 1.0.31+946bf4c36c
+		fabric-client-gametest-api-v1: Fabric Client Game Test API (v1) 4.2.5+8a98c3fc6c
+		fabric-command-api-v2: Fabric Command API (v2) 2.2.53+946bf4c36c
+		fabric-content-registries-v0: Fabric Content Registries (v0) 10.0.18+946bf4c36c
+		fabric-convention-tags-v1: Fabric Convention Tags 2.1.40+7f945d5b6c
+		fabric-convention-tags-v2: Fabric Convention Tags (v2) 2.15.5+eb5df52f6c
+		fabric-crash-report-info-v1: Fabric Crash Report Info (v1) 0.3.15+946bf4c36c
+		fabric-data-attachment-api-v1: Fabric Data Attachment API (v1) 1.8.10+946bf4c36c
+		fabric-data-generation-api-v1: Fabric Data Generation API (v1) 23.2.4+55e55d296c
+		fabric-dimensions-v1: Fabric Dimensions API (v1) 4.0.19+946bf4c36c
+		fabric-entity-events-v1: Fabric Entity Events (v1) 2.1.1+c9e472736c
+		fabric-events-interaction-v0: Fabric Events Interaction (v0) 4.0.23+946bf4c36c
+		fabric-game-rule-api-v1: Fabric Game Rule API (v1) 1.0.73+c64c9c5b6c
+		fabric-gametest-api-v1: Fabric Game Test API (v1) 3.1.9+39ce47f56c
+		fabric-item-api-v1: Fabric Item API (v1) 11.4.3+946bf4c36c
+		fabric-item-group-api-v1: Fabric Item Group API (v1) 4.2.13+946bf4c36c
+		fabric-key-binding-api-v1: Fabric Key Binding API (v1) 1.0.65+946bf4c36c
+		fabric-lifecycle-events-v1: Fabric Lifecycle Events (v1) 2.6.3+db4dfd856c
+		fabric-loot-api-v2: Fabric Loot API (v2) 3.0.55+3f89f5a56c
+		fabric-loot-api-v3: Fabric Loot API (v3) 2.0.2+946bf4c36c
+		fabric-message-api-v1: Fabric Message API (v1) 6.1.1+946bf4c36c
+		fabric-model-loading-api-v1: Fabric Model Loading API (v1) 5.2.5+946bf4c36c
+		fabric-networking-api-v1: Fabric Networking API (v1) 5.0.1+946bf4c36c
+		fabric-object-builder-api-v1: Fabric Object Builder API (v1) 21.1.7+946bf4c36c
+		fabric-particles-v1: Fabric Particles (v1) 4.1.7+946bf4c36c
+		fabric-recipe-api-v1: Fabric Recipe API (v1) 8.1.14+946bf4c36c
+		fabric-registry-sync-v0: Fabric Registry Sync (v0) 6.1.27+946bf4c36c
+		fabric-renderer-api-v1: Fabric Renderer API (v1) 7.0.2+946bf4c36c
+		fabric-renderer-indigo: Fabric Renderer - Indigo 4.0.2+946bf4c36c
+		fabric-rendering-fluids-v1: Fabric Rendering Fluids (v1) 3.1.30+fa6cb72b6c
+		fabric-rendering-v1: Fabric Rendering (v1) 12.4.0+e8d43c766c
+		fabric-resource-conditions-api-v1: Fabric Resource Conditions API (v1) 5.0.24+946bf4c36c
+		fabric-resource-loader-v0: Fabric Resource Loader (v0) 3.1.11+946bf4c36c
+		fabric-screen-api-v1: Fabric Screen API (v1) 2.1.0+277ecf7d6c
+		fabric-screen-handler-api-v1: Fabric Screen Handler API (v1) 1.3.136+946bf4c36c
+		fabric-sound-api-v1: Fabric Sound API (v1) 1.0.42+946bf4c36c
+		fabric-tag-api-v1: Fabric Tag API (v1) 1.2.1+946bf4c36c
+		fabric-transfer-api-v1: Fabric Transfer API (v1) 6.0.5+946bf4c36c
+		fabric-transitive-access-wideners-v1: Fabric Transitive Access Wideners (v1) 6.4.1+ac3e15d16c
+		fabricloader: Fabric Loader 0.18.1
+		generated_66c9f61: Generated Mod (Please Ignore) 1.0.0
+		java: Java HotSpot(TM) 64-Bit Server VM 21
+		minecraft: Minecraft 1.21.7
+		mixinextras: MixinExtras 0.5.0
+		packet_tweaker: Packet Tweaker 0.6.0-pre.1+1.21.2-pre3
+		polymer-autohost: Polymer (Auto Host) 0.13.8+1.21.8
+		polymer-blocks: Polymer (Textured Blocks) 0.13.8+1.21.8
+		polymer-common: Polymer (Common) 0.13.8+1.21.8
+		polymer-core: Polymer (Core) 0.13.8+1.21.8
+		polymer-networking: Polymer (Networking) 0.13.8+1.21.8
+		polymer-registry-sync-manipulator: Polymer (Registry Sync Manipulator) 0.13.8+1.21.8
+		polymer-resource-pack: Polymer (Resource Pack) 0.13.8+1.21.8
+		polymer-resource-pack-extras: Polymer (Resource Pack Extras) 0.13.8+1.21.8
+		polymer-virtual-entity: Polymer (Virtual Entity) 0.13.8+1.21.8
+	Launched Version: Fabric
+	Backend library: LWJGL version 3.3.3-snapshot
+	Backend API: Unknown
+	Window size: <not initialized>
+	GFLW Platform: <error>
+	Render Extensions: ERR
+	GL debug messages: <no renderer available>
+	Is Modded: Definitely; Client brand changed to 'fabric'
+	Universe: 404
+	Type: Client (map_client.txt)
+	Locale: zh_CN
+	System encoding: GBK
+	File encoding: UTF-8
+	CPU: 12x 12th Gen Intel(R) Core(TM) i5-12450H

@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "package": "cc.thonly.base_bridge.fabric.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "client": [
+  ],
+  "mixins": [
+    "BiomeModificationMixin",
+    "BiomeSelectionContextMixin",
+    "RegistryDataLoaderMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
