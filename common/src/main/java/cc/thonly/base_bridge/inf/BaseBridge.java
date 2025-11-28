@@ -1,5 +1,6 @@
 package cc.thonly.base_bridge.inf;
 
+import cc.thonly.base_bridge.impl.Event;
 import cc.thonly.base_bridge.inf.c.CommonInfBiomeModification;
 import cc.thonly.base_bridge.inf.c.CommonInfBiomeSelectionContext;
 import cc.thonly.base_bridge.util.FixedLazyObject;
@@ -55,13 +56,18 @@ public interface BaseBridge {
 
     StrippableBlockRegistry getStrippableBlockRegistry();
 
-    ServerContentRegistry getServerContentRegistry();
-
     <C extends CommonInfBiomeSelectionContext, M extends CommonInfBiomeModification> BiomeRegistry<C, M> getBiomeRegistry();
 
     DefaultAttributeRegistry getDefaultAttributeRegistry();
 
-    void registerEvents();
+    BrewingRecipeRegistry getBrewingRecipeRegistry();
+
+    ServerContentRegistry getServerContentRegistry();
+
+    @ApiStatus.Internal
+    default void registerInternalEvents() {
+
+    }
 
     @ApiStatus.Internal
     static void setPlatformType(PlatformType platformType) {

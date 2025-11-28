@@ -28,6 +28,7 @@ public class BaseBridgeFabricImpl implements BaseBridge {
     final DefaultAttributeRegistry defaultAttributeRegistry = new DefaultAttributeRegistryFabricImpl();
     final LootTableRegistry lootTableRegistry = new LootTableRegistryFabricImpl();
     final StrippableBlockRegistry strippableBlockRegistry = new StrippableBlockRegistryFabricImpl();
+    final BrewingRecipeRegistry brewingRecipeRegistry = new BrewingRecipeRegistryFabricImpl();
     final ServerContentRegistry serverContentRegistry = new ServerContentRegistryImpl();
 
     @Override
@@ -108,6 +109,11 @@ public class BaseBridgeFabricImpl implements BaseBridge {
     }
 
     @Override
+    public BrewingRecipeRegistry getBrewingRecipeRegistry() {
+        return this.brewingRecipeRegistry;
+    }
+
+    @Override
     public ServerContentRegistry getServerContentRegistry() {
         return this.serverContentRegistry;
     }
@@ -123,11 +129,12 @@ public class BaseBridgeFabricImpl implements BaseBridge {
     }
 
     @Override
-    public void registerEvents() {
+    public void registerInternalEvents() {
         if (this.loadedEvent) {
             return;
         }
         this.loadedEvent = true;
+        ((BrewingRecipeRegistryFabricImpl) this.brewingRecipeRegistry).registerInternalEvents();
     }
 
     void registerPolymerItemGroup(ResourceKey<CreativeModeTab> key, CreativeModeTab group) {

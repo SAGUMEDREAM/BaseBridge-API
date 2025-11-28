@@ -79,7 +79,10 @@ public class ServerContentRegistryImpl implements ServerContentRegistry {
                 if (!a.registryKey().equals(writableRegistry.key())) {
                     continue;
                 }
-                writableRegistry.register((ResourceKey<T>) tuple.getA(), (T) tuple.getB(), RegistrationInfo.BUILT_IN);
+                if (writableRegistry.containsKey(a.location())) {
+                    continue;
+                }
+                writableRegistry.register((ResourceKey<T>) a, (T) b, RegistrationInfo.BUILT_IN);
             }
         });
     }

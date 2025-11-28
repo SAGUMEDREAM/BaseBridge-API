@@ -24,6 +24,7 @@ import net.minecraft.world.level.block.FireBlock;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.neoforged.bus.api.EventPriority;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BlockEntityTypeAddBlocksEvent;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
@@ -48,6 +49,7 @@ public class BaseBridgeNeoForgeImpl implements BaseBridge {
     final BiomeRegistry biomeRegistry = new BiomeRegistryNeoForgeImpl();
     final DefaultAttributeRegistry defaultAttributeRegistry = new DefaultAttributeRegistryNeoForgeImpl();
     final StrippableBlockRegistry strippableBlockRegistry = new StrippableBlockRegistryNeoForgeImpl();
+    final BrewingRecipeRegistry brewingRecipeRegistry = new BrewingRecipeRegistryNeoForgeImpl();
     final ServerContentRegistry serverContentRegistry = new ServerContentRegistryImpl();
 
     public BaseBridgeNeoForgeImpl() {
@@ -139,12 +141,17 @@ public class BaseBridgeNeoForgeImpl implements BaseBridge {
     }
 
     @Override
+    public BrewingRecipeRegistry getBrewingRecipeRegistry() {
+        return this.brewingRecipeRegistry;
+    }
+
+    @Override
     public ServerContentRegistry getServerContentRegistry() {
         return this.serverContentRegistry;
     }
 
     @Override
-    public void registerEvents() {
+    public void registerInternalEvents() {
         if (this.loadedEvent) {
             return;
         }
@@ -187,19 +194,11 @@ public class BaseBridgeNeoForgeImpl implements BaseBridge {
                 }
             }
         });
-        this.eventBus.addListener(EventPriority.HIGHEST, (FurnaceFuelBurnTimeEvent event) -> {
-            ((FuelRegistryNeoForgeImpl) this.fuelRegistry).onFurnaceFuelBurnTime(event);
-        });
-        this.eventBus.addListener(EventPriority.HIGHEST, (VillagerTradesEvent event) -> {
-            ((TradeRegistryNeoForgeImpl) this.tradeRegistry).onVillagerTrades(event);
-        });
-        this.eventBus.addListener(EventPriority.HIGHEST, (BuildCreativeModeTabContentsEvent event) -> {
-            ((CreativeTabRegistryNeoForgeImpl) this.creativeTabRegistry).buildContents(event);
-        });
-        this.eventBus.addListener(EventPriority.HIGHEST, (LootTableLoadEvent event) -> {
-            ((LootTableRegistryNeoForgeImpl) this.creativeTabRegistry).onModify(event);
-        });
-
+        NeoForge.EVENT_BUS.addListener(EventPriority.HIGHEST, ((FuelRegistryNeoForgeImpl) this.fuelRegistry)::onFurnaceFuelBurnTime);
+        NeoForge.EVENT_BUS.addListener(EventPriority.HIGHEST, ((TradeRegistryNeoForgeImpl) this.tradeRegistry)::onVillagerTrades);
+        BaseBridgeNeoForge.EVENT_BUS.addListener(EventPriority.HIGHEST, ((CreativeTabRegistryNeoForgeImpl) this.creativeTabRegistry)::buildContents);
+        NeoForge.EVENT_BUS.addListener(EventPriority.HIGHEST, ((LootTableRegistryNeoForgeImpl) this.lootTableRegistry)::onModify);
+        NeoForge.EVENT_BUS.addListener(EventPriority.HIGHEST, ((BrewingRecipeRegistryNeoForgeImpl)this.brewingRecipeRegistry)::registerBrewingEvent);
     }
 
     public record FlammableEntry(TagKey<Block> tag, int burn, int spread) {

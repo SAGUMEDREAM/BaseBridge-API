@@ -70,7 +70,7 @@
 [Architectury Transformer DEBUG]  - D:\Gradle\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl\3.3.3\29589b5f87ed335a6c7e7ee6a5775f81f97ecb84\lwjgl-3.3.3.jar
 [Architectury Transformer DEBUG]  - D:\Gradle\.gradle\caches\modules-2\files-2.1\org.lz4\lz4-java\1.8.0\4b986a99445e49ea5fbf5d149c4b63f6ed6c6780\lz4-java-1.8.0.jar
 [Architectury Transformer DEBUG]  - D:\Gradle\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-api\2.0.16\172931663a09a1fa515567af5fbef00897d3c04\slf4j-api-2.0.16.jar
-[Architectury Transformer DEBUG]  - D:\Gradle\base_bridge\.gradle\loom-cache\minecraftMaven\net\minecraft\minecraft-merged-b48f52d6a8\1.21.7-loom.mappings.1_21_7.layered+hash.40359-v2\minecraft-merged-b48f52d6a8-1.21.7-loom.mappings.1_21_7.layered+hash.40359-v2.jar
+[Architectury Transformer DEBUG]  - D:\Gradle\base_bridge\.gradle\loom-cache\minecraftMaven\net\minecraft\minecraft-merged-da0c0ec4cc\1.21.7-loom.mappings.1_21_7.layered+hash.40359-v2\minecraft-merged-da0c0ec4cc-1.21.7-loom.mappings.1_21_7.layered+hash.40359-v2.jar
 [Architectury Transformer DEBUG]  - D:\Gradle\.gradle\caches\modules-2\files-2.1\io.netty\netty-transport-native-epoll\4.1.118.Final\7e6b89e3746acb7cf6f0aad993bbd058fc6d912e\netty-transport-native-epoll-4.1.118.Final-linux-x86_64.jar
 [Architectury Transformer DEBUG]  - D:\Gradle\.gradle\caches\modules-2\files-2.1\io.netty\netty-transport-native-epoll\4.1.118.Final\82f94d0a9d837f6b6a580379373310ff7288c0f8\netty-transport-native-epoll-4.1.118.Final-linux-aarch_64.jar
 [Architectury Transformer DEBUG]  - D:\Gradle\.gradle\caches\modules-2\files-2.1\io.netty\netty-codec-http\4.1.82.Final\f74b563d5206b71c430eeae4cdf703b0ed9cf07c\netty-codec-http-4.1.82.Final.jar
@@ -129,15 +129,15 @@
 [Architectury Transformer DEBUG]  - D:\Gradle\base_bridge\.gradle\loom-cache\remapped_mods\remapped\eu\pb4\polymer-reg-sync-manipulator-ac193a18\0.13.8+1.21.8\polymer-reg-sync-manipulator-ac193a18-0.13.8+1.21.8.jar
 [Architectury Transformer DEBUG]  - D:\Gradle\base_bridge\.gradle\loom-cache\remapped_mods\remapped\eu\pb4\polymer-common-ac193a18\0.13.8+1.21.8\polymer-common-ac193a18-0.13.8+1.21.8.jar
 [Architectury Transformer DEBUG]  - D:\Gradle\base_bridge\.gradle\loom-cache\remapped_mods\remapped\xyz\nucleoid\packet-tweaker-ac193a18\0.6.0-pre.1+1.21.2-pre3\packet-tweaker-ac193a18-0.6.0-pre.1+1.21.2-pre3.jar
-[Architectury Transformer] Read classpath in 1.634 s
+[Architectury Transformer] Read classpath in 1.624 s
 [Architectury Transformer DEBUG] Closed File Systems for D:\Gradle\base_bridge\common\build\devlibs\base_bridge-common-0.1.0-dev.jar
-[Architectury Transformer DEBUG] Transforming 5 transformer(s) from D:\Gradle\base_bridge\common\build\devlibs\base_bridge-common-0.1.0-dev.jar to C:\Users\稀神灵梦\AppData\Local\Temp\15930306150249412251.jar: 
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RuntimeMixinRefmapDetector@74294adb
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.GenerateFakeFabricMod@70a9f84e
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformExpectPlatform@130f889
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables@1188e820
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformPlatformOnly@2f490758
-[Architectury Transformer DEBUG] Transforming from D:\Gradle\base_bridge\common\build\devlibs\base_bridge-common-0.1.0-dev.jar to C:\Users\稀神灵梦\AppData\Local\Temp\15930306150249412251.jar with 5 transformer(s) on dev.architectury.transformer.handler.SimpleTransformerHandler
+[Architectury Transformer DEBUG] Transforming 5 transformer(s) from D:\Gradle\base_bridge\common\build\devlibs\base_bridge-common-0.1.0-dev.jar to C:\Users\稀神灵梦\AppData\Local\Temp\8352780364550473212.jar: 
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RuntimeMixinRefmapDetector@2bea5ab4
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.GenerateFakeFabricMod@3d8314f0
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformExpectPlatform@2df32bf7
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables@530612ba
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformPlatformOnly@2a40cd94
+[Architectury Transformer DEBUG] Transforming from D:\Gradle\base_bridge\common\build\devlibs\base_bridge-common-0.1.0-dev.jar to C:\Users\稀神灵梦\AppData\Local\Temp\8352780364550473212.jar with 5 transformer(s) on dev.architectury.transformer.handler.SimpleTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/event/ServerReloadFinishedCallback with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/exception/AlreadySetException with maxs=true frames=true
@@ -148,6 +148,10 @@
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/impl/ServerContentRegistryImpl with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/inf/BaseBridge with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/inf/BiomeRegistry with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/inf/BrewingRecipeRegistry$ItemRecipe with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/inf/BrewingRecipeRegistry$PotionRecipe with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/inf/BrewingRecipeRegistry$Recipe with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/inf/BrewingRecipeRegistry with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/inf/c/CommonInfBiomeModification with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/inf/c/CommonInfBiomeSelectionContext with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/inf/client/BaseBridgeClient with maxs=true frames=true
@@ -155,13 +159,13 @@
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/inf/CreativeTabRegistry with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/inf/DefaultAttributeRegistry with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/inf/FuelRegistry with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/inf/like/LoadingFunctionLike with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/inf/LootTableRegistry$LootTableModificationContext with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/inf/LootTableRegistry$Modify with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/inf/LootTableRegistry$Replace with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/inf/LootTableRegistry with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/inf/PlatformFactory with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/inf/ServerContentRegistry with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/inf/StrippableBlockRegistry with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/inf/TradeRegistry with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/internal/ArrayBackedEvent with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/internal/EventFactoryImpl with maxs=true frames=true
@@ -169,6 +173,7 @@
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/internal/NodeSorting$NodeScc with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/internal/NodeSorting with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/internal/SortableNode with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/mixin/AxeItemMixin with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/mixin/HolderReferenceAccessors with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/mixin/LootTableMappedRegistryMixin with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/mixin/MinecraftServerMixin with maxs=true frames=true
@@ -186,121 +191,122 @@
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/util/TagRegistration with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/util/TagUtil with maxs=true frames=true
 [Architectury Transformer DEBUG] Checking whether /base_bridge-common-common-refmap.json is a mixin config.
+[Architectury Transformer DEBUG] Checking whether /architectury.common.json is a mixin config.
 [Architectury Transformer DEBUG] Checking whether /base_bridge.mixins.json is a mixin config.
-[Architectury Transformer DEBUG] Closed File Systems for C:\Users\稀神灵梦\AppData\Local\Temp\15930306150249412251.jar
+[Architectury Transformer DEBUG] Closed File Systems for C:\Users\稀神灵梦\AppData\Local\Temp\8352780364550473212.jar
 [Architectury Transformer] Listening at D:\Gradle\base_bridge\common\build\devlibs\base_bridge-common-0.1.0-dev.jar
-[Architectury Transformer DEBUG] Temporary jar [C:\Users\稀神灵梦\AppData\Local\Temp\15930306150249412251.jar] contains packages: cc.thonly.base_bridge.inf.client, cc.thonly.base_bridge.inf.like, cc.thonly.base_bridge.inf, cc.thonly.base_bridge.util, cc.thonly.base_bridge.impl, cc.thonly.base_bridge.exception, cc.thonly.base_bridge.mixin, cc.thonly.base_bridge.tag, cc.thonly.base_bridge.internal, cc.thonly.base_bridge.inf.c, cc.thonly.base_bridge.event
+[Architectury Transformer DEBUG] Temporary jar [C:\Users\稀神灵梦\AppData\Local\Temp\8352780364550473212.jar] contains packages: cc.thonly.base_bridge.inf.client, cc.thonly.base_bridge.inf, cc.thonly.base_bridge.util, cc.thonly.base_bridge.impl, cc.thonly.base_bridge.exception, cc.thonly.base_bridge.mixin, cc.thonly.base_bridge.tag, cc.thonly.base_bridge.internal, cc.thonly.base_bridge.inf.c, cc.thonly.base_bridge.event
 [Architectury Transformer DEBUG] Closed File Systems for D:\Gradle\base_bridge\common\build\devlibs\base_bridge-common-0.1.0-dev.jar
 [Architectury Transformer DEBUG] Classpath entry [D:\Gradle\base_bridge\fabric\build\resources\main] contains packages: 
 [Architectury Transformer DEBUG] Transforming from cc/thonly/base_bridge/inf/BaseBridge.class to cc/thonly/base_bridge/inf/BaseBridge.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/inf/BaseBridge with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/inf/BaseBridge in 2.599 ms
+[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/inf/BaseBridge in 1.954 ms
 [Architectury Transformer DEBUG] Transforming from cc/thonly/base_bridge/inf/client/BaseBridgeClient.class to cc/thonly/base_bridge/inf/client/BaseBridgeClient.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/inf/client/BaseBridgeClient with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/inf/client/BaseBridgeClient in 440.6 μs
+[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/inf/client/BaseBridgeClient in 574.1 μs
 [Architectury Transformer DEBUG] Transforming from cc/thonly/base_bridge/util/LazyObject.class to cc/thonly/base_bridge/util/LazyObject.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/util/LazyObject with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/util/LazyObject in 462.5 μs
+[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/util/LazyObject in 428.5 μs
 [Architectury Transformer DEBUG] Transforming from cc/thonly/base_bridge/util/FixedLazyObject.class to cc/thonly/base_bridge/util/FixedLazyObject.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/util/FixedLazyObject with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/util/FixedLazyObject in 381.8 μs
+[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/util/FixedLazyObject in 599.4 μs
 [Architectury Transformer DEBUG] Transforming from cc/thonly/base_bridge/inf/FuelRegistry.class to cc/thonly/base_bridge/inf/FuelRegistry.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/inf/FuelRegistry with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/inf/FuelRegistry in 380.8 μs
+[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/inf/FuelRegistry in 206.9 μs
 [Architectury Transformer DEBUG] Transforming from cc/thonly/base_bridge/inf/TradeRegistry.class to cc/thonly/base_bridge/inf/TradeRegistry.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/inf/TradeRegistry with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/inf/TradeRegistry in 248.9 μs
+[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/inf/TradeRegistry in 195.3 μs
 [Architectury Transformer DEBUG] Transforming from cc/thonly/base_bridge/inf/CompostingRegistry.class to cc/thonly/base_bridge/inf/CompostingRegistry.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/inf/CompostingRegistry with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/inf/CompostingRegistry in 181.5 μs
+[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/inf/CompostingRegistry in 144.4 μs
 [Architectury Transformer DEBUG] Transforming from cc/thonly/base_bridge/inf/CreativeTabRegistry.class to cc/thonly/base_bridge/inf/CreativeTabRegistry.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/inf/CreativeTabRegistry with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/inf/CreativeTabRegistry in 222.9 μs
+[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/inf/CreativeTabRegistry in 247.1 μs
 [Architectury Transformer DEBUG] Transforming from cc/thonly/base_bridge/inf/BiomeRegistry.class to cc/thonly/base_bridge/inf/BiomeRegistry.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/inf/BiomeRegistry with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/inf/BiomeRegistry in 463.8 μs
+[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/inf/BiomeRegistry in 208.5 μs
 [Architectury Transformer DEBUG] Transforming from cc/thonly/base_bridge/inf/DefaultAttributeRegistry.class to cc/thonly/base_bridge/inf/DefaultAttributeRegistry.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/inf/DefaultAttributeRegistry with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/inf/DefaultAttributeRegistry in 206.8 μs
+[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/inf/DefaultAttributeRegistry in 226.3 μs
 [Architectury Transformer DEBUG] Transforming from cc/thonly/base_bridge/inf/LootTableRegistry.class to cc/thonly/base_bridge/inf/LootTableRegistry.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/inf/LootTableRegistry with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/inf/LootTableRegistry in 263.4 μs
+[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/inf/LootTableRegistry in 220.1 μs
+[Architectury Transformer DEBUG] Transforming from cc/thonly/base_bridge/inf/StrippableBlockRegistry.class to cc/thonly/base_bridge/inf/StrippableBlockRegistry.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
+[Architectury Transformer DEBUG] Found class transformer
+[Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/inf/StrippableBlockRegistry with maxs=true frames=true
+[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/inf/StrippableBlockRegistry in 263.2 μs
+[Architectury Transformer DEBUG] Transforming from cc/thonly/base_bridge/inf/BrewingRecipeRegistry.class to cc/thonly/base_bridge/inf/BrewingRecipeRegistry.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
+[Architectury Transformer DEBUG] Found class transformer
+[Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/inf/BrewingRecipeRegistry with maxs=true frames=true
+[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/inf/BrewingRecipeRegistry in 477.2 μs
 [Architectury Transformer DEBUG] Transforming from cc/thonly/base_bridge/inf/ServerContentRegistry.class to cc/thonly/base_bridge/inf/ServerContentRegistry.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/inf/ServerContentRegistry with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/inf/ServerContentRegistry in 1.072 ms
-[Architectury Transformer DEBUG] Transforming from cc/thonly/base_bridge/impl/ServerContentRegistryImpl.class to cc/thonly/base_bridge/impl/ServerContentRegistryImpl.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
-[Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/impl/ServerContentRegistryImpl with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/impl/ServerContentRegistryImpl in 2.197 ms
-[Architectury Transformer DEBUG] Transforming from cc/thonly/base_bridge/impl/BaseBridgeDriver.class to cc/thonly/base_bridge/impl/BaseBridgeDriver.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
-[Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/impl/BaseBridgeDriver with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/impl/BaseBridgeDriver in 402.1 μs
+[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/inf/ServerContentRegistry in 1.341 ms
 [Architectury Transformer DEBUG] Transforming from cc/thonly/base_bridge/exception/AlreadySetException.class to cc/thonly/base_bridge/exception/AlreadySetException.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/exception/AlreadySetException with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/exception/AlreadySetException in 364.7 μs
+[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/exception/AlreadySetException in 751.8 μs
 [Architectury Transformer DEBUG] Transforming from cc/thonly/base_bridge/util/PlatformType.class to cc/thonly/base_bridge/util/PlatformType.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/util/PlatformType with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/util/PlatformType in 450.8 μs
+[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/util/PlatformType in 870.8 μs
+[Architectury Transformer DEBUG] Transforming from cc/thonly/base_bridge/impl/ServerContentRegistryImpl.class to cc/thonly/base_bridge/impl/ServerContentRegistryImpl.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
+[Architectury Transformer DEBUG] Found class transformer
+[Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/impl/ServerContentRegistryImpl with maxs=true frames=true
+[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/impl/ServerContentRegistryImpl in 1.622 ms
+[Architectury Transformer DEBUG] Transforming from cc/thonly/base_bridge/impl/BaseBridgeDriver.class to cc/thonly/base_bridge/impl/BaseBridgeDriver.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
+[Architectury Transformer DEBUG] Found class transformer
+[Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/impl/BaseBridgeDriver with maxs=true frames=true
+[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/impl/BaseBridgeDriver in 331.6 μs
 [Architectury Transformer DEBUG] Transforming from cc/thonly/base_bridge/mixin/HolderReferenceAccessors.class to cc/thonly/base_bridge/mixin/HolderReferenceAccessors.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/mixin/HolderReferenceAccessors with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/mixin/HolderReferenceAccessors in 710.4 μs
+[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/mixin/HolderReferenceAccessors in 667.5 μs
 [Architectury Transformer DEBUG] Transforming from cc/thonly/base_bridge/impl/EventFactory.class to cc/thonly/base_bridge/impl/EventFactory.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/impl/EventFactory with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/impl/EventFactory in 2.142 ms
+[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/impl/EventFactory in 815.8 μs
 [Architectury Transformer DEBUG] Transforming from cc/thonly/base_bridge/internal/EventFactoryImpl.class to cc/thonly/base_bridge/internal/EventFactoryImpl.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/internal/EventFactoryImpl with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/internal/EventFactoryImpl in 979.3 μs
+[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/internal/EventFactoryImpl in 1.822 ms
 [Architectury Transformer DEBUG] Transforming from cc/thonly/base_bridge/impl/Event.class to cc/thonly/base_bridge/impl/Event.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/impl/Event with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/impl/Event in 389.4 μs
+[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/impl/Event in 1.414 ms
 [Architectury Transformer DEBUG] Transforming from cc/thonly/base_bridge/internal/ArrayBackedEvent.class to cc/thonly/base_bridge/internal/ArrayBackedEvent.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/internal/ArrayBackedEvent with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/internal/ArrayBackedEvent in 967.5 μs
+[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/internal/ArrayBackedEvent in 2.207 ms
 [Architectury Transformer DEBUG] Transforming from cc/thonly/base_bridge/internal/SortableNode.class to cc/thonly/base_bridge/internal/SortableNode.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/internal/SortableNode with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/internal/SortableNode in 437.8 μs
+[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/internal/SortableNode in 810.5 μs
 [Architectury Transformer DEBUG] Transforming from cc/thonly/base_bridge/internal/EventPhaseData.class to cc/thonly/base_bridge/internal/EventPhaseData.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/internal/EventPhaseData with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/internal/EventPhaseData in 301.6 μs
+[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/internal/EventPhaseData in 338.9 μs
 [Architectury Transformer DEBUG] Transforming from cc/thonly/base_bridge/internal/NodeSorting.class to cc/thonly/base_bridge/internal/NodeSorting.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/internal/NodeSorting with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/internal/NodeSorting in 1.260 ms
+[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/internal/NodeSorting in 1.841 ms
 [Architectury Transformer DEBUG] Transforming from cc/thonly/base_bridge/internal/NodeSorting$NodeScc.class to cc/thonly/base_bridge/internal/NodeSorting$NodeScc.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/internal/NodeSorting$NodeScc with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/internal/NodeSorting$NodeScc in 838.4 μs
+[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/internal/NodeSorting$NodeScc in 457.0 μs
 [Architectury Transformer DEBUG] Transforming from cc/thonly/base_bridge/inf/LootTableRegistry$Replace.class to cc/thonly/base_bridge/inf/LootTableRegistry$Replace.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/inf/LootTableRegistry$Replace with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/inf/LootTableRegistry$Replace in 288.5 μs
-[Architectury Transformer DEBUG] Transforming from cc/thonly/base_bridge/util/LoadingPhase.class to cc/thonly/base_bridge/util/LoadingPhase.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
-[Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/util/LoadingPhase with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/util/LoadingPhase in 745.6 μs
-[Architectury Transformer DEBUG] Transforming from cc/thonly/base_bridge/inf/c/CommonInfBiomeSelectionContext.class to cc/thonly/base_bridge/inf/c/CommonInfBiomeSelectionContext.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
-[Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing cc/thonly/base_bridge/inf/c/CommonInfBiomeSelectionContext with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/inf/c/CommonInfBiomeSelectionContext in 362.9 μs
+[Architectury Transformer DEBUG] Transformed cc/thonly/base_bridge/inf/LootTableRegistry$Replace in 355.1 μs

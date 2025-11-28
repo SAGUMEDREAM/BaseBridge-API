@@ -7,7 +7,7 @@ public class BaseBridgeDriver {
 
     public static void initialize(BaseBridge bridge) {
         BaseBridge.setRet(bridge);
-        bridge.registerEvents();
+        bridge.registerInternalEvents();
     }
 
     public static void initializeClient(BaseBridgeClient bridge) {

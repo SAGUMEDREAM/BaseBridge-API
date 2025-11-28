@@ -6,7 +6,9 @@
   "client": [
   ],
   "mixins": [
+    "ClientHooksMixin",
     "FireBlockMixin",
+    "MappedRegistryMixin",
     "RegistryDataLoaderMixin"
   ],
   "injectors": {

@@ -151,5 +151,10 @@
       <option name="name" value="Forge" />
       <option name="url" value="https://maven.minecraftforge.net/" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven8" />
+      <option name="name" value="maven8" />
+      <option name="url" value="https://neoforged.forgecdn.net/" />
+    </remote-repository>
   </component>
 </project>

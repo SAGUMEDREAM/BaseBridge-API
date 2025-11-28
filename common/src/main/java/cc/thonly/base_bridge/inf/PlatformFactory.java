@@ -4,6 +4,7 @@ import it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap;
 
 import java.util.Map;
 
+@SuppressWarnings("unchecked")
 public interface PlatformFactory {
     Map<Class<?>, Object> CONTENTS = new Object2ObjectOpenHashMap<>();
 
@@ -11,7 +12,6 @@ public interface PlatformFactory {
         CONTENTS.put(infClazz, impl);
     }
 
-    @SuppressWarnings("unchecked")
     static <T> T getImpl(Class<T> infClazz) {
         if (!hasImpl(infClazz)) {
             throw new NullPointerException("Implementation not found for: " + infClazz.getName());

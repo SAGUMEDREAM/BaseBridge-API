@@ -46,7 +46,7 @@ dependencies {
 }
 
 loom {
-    accessWidenerPath = file("/src/main/resources/base_bridge.accesswidener")
+    accessWidenerPath.set(project(":common").loom.accessWidenerPath)
 }
 
 processResources {

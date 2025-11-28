@@ -34,6 +34,13 @@ versionRange = "[17.0.8,)"
 ordering = "AFTER"
 side = "BOTH"
 
+[[dependencies.base_bridge]]
+modId="kriforfab"
+type = "required"
+mandatory = true
+ordering="NONE"
+side="BOTH"
+
 [[mixins]]
 config = "base_bridge.mixins.json"
 
