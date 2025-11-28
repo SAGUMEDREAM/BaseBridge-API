@@ -6,6 +6,7 @@ import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.chunk.ChunkSectionLayer;
 import net.minecraft.world.level.block.Block;
 
+@SuppressWarnings("deprecation")
 public class BaseBridgeClientNeoForgeImpl implements BaseBridgeClient {
     @Override
     public void registerBlockCutout(Block block) {

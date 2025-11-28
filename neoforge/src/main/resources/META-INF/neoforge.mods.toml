@@ -16,21 +16,19 @@ This is an example description! Tell everyone what your mod is about!
 [[dependencies.base_bridge]]
 modId = "neoforge"
 type = "required"
-versionRange = "[21.7,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.base_bridge]]
 modId = "minecraft"
 type = "required"
-versionRange = "[1.21.7,)"
+versionRange = "[1.21.5,1.21.8]"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.base_bridge]]
 modId = "architectury"
 type = "required"
-versionRange = "[17.0.8,)"
 ordering = "AFTER"
 side = "BOTH"
 
